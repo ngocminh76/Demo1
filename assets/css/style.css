@@ -1,0 +1,385 @@
+/* Reset css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* 1. vị trí
+
+
+
+*/
+.clear {
+  clear: both;
+}
+
+#main {
+  height: 46.5px;
+  background-color: white;
+}
+
+/* main */
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-third {
+  width: 33.3333%;
+}
+
+.col-half {
+  width: 50%;
+}
+
+.mt-8 {
+  margin-top: 8px !important;
+}
+
+.mt-16 {
+  margin-top: 16px !important;
+}
+
+.col-full {
+  width: 100%;
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav,
+.subnav {
+  list-style-type: none;
+}
+
+#nav>li {
+  display: inline-block;
+}
+
+#nav .nav-arrow-down {
+  font-size: 12px;
+}
+
+#nav li {
+  position: relative;
+}
+
+#header .search-btn:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+#header .search-btn {
+  float: right;
+  padding: 0 21px;
+}
+
+#header .search-icon {
+  color: #fff;
+  font-size: 20px;
+  line-height: 46.5px;
+}
+
+#nav>li>a {
+  color: white;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 46.5px;
+  padding: 0 24px;
+  display: block;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover a {
+  color: #000;
+  background-color: #ccc;
+}
+
+/* #nav li:hover a {
+    color: #000;
+    background-color: #ccc;
+} */
+/* Common */
+
+#nav .subnav {
+  display: none;
+  min-width: 160px;
+  top: 100%;
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+  color: black;
+  padding: 0 12px;
+  line-height: 38px;
+}
+
+#header {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  height: 46px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#slider .text-content {
+  position: absolute;
+  bottom: 48px;
+  color: #fff;
+  /* left: 50%;
+    transform: translateX(-50%); */
+  width: 100%;
+  text-align: center;
+}
+
+#slider .text-heading {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#slider .text-description {
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+#slider {
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url("/assets/img/Slider/slider1.jpg") top center / cover no-repeat;
+}
+
+#content {}
+
+#content .content-section {
+  padding: 64px 0;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content .section-heading {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 25px;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+#content .about-text {
+  margin-top: 25px;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+#content .members-list {
+  margin-top: 48px;
+}
+
+
+.text-center {
+  text-align: center !important;
+
+}
+
+#content .member-name {
+  font-size: 15px;
+}
+
+#content .member-img {
+  width: 154px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+/* Tour section */
+.tour-section {
+  background: #000;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.ticket-list {
+  background-color: #fff;
+  margin-top: 40px;
+  list-style-type: none;
+}
+
+.ticket-list li {
+  color: #757575;
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.ticket-list .sold-out {
+  background-color: #f44336;
+  color: #fff;
+  padding: 3px 4px;
+  margin-left: 16px;
+}
+
+.ticket-list .quantity {
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -3px;
+}
+
+/* places */
+.places-list {
+  margin-top: 32px;
+}
+
+
+
+.place-img {
+  width: 100%;
+  display: block;
+}
+
+.place-img:hover {
+  opacity: 0.6;
+}
+
+.place-body {
+  padding: 16px;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+.place-heading {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.place-time {
+  margin-top: 15px;
+  color: #757575;
+
+}
+
+.place-description {
+  margin-top: 15px;
+  line-height: 1.4;
+
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.btn {
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  padding: 11px 16px;
+  display: inline-block;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+/*  */
+.contact-content {
+  margin-top: 48px;
+}
+
+.contact-info {
+  font-size: 18px;
+  line-height: 1.4;
+
+}
+
+.contact-form {
+  font-size: 15px;
+}
+
+.contact-info i[class*="ti-"] {
+  width: 30px;
+
+}
+
+.contact-form .form-control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.map-section img {
+  width: 100%;
+}
+
+#footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+#footer .socials-list a{
+  font-size: 24px;
+}
+
+#footer .socials-list a{
+  color:rgba(0, 0, 0, 0.6) ;
+  text-decoration: none;
+}
+#footer .socials-list a:hover{
+  color:rgba(0, 0, 0, 0.4) ;
+
+}
+.copyright{
+  margin-top: 15px;
+}
+.copyright a{
+  color:rgba(0, 0, 0, 0.6) ;
+
+}
